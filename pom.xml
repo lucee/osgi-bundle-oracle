@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>oracle</artifactId>
-  <version>21.3.0.0011L</version>
+  <version>21.3.0.0000L</version>
   <name>oracle</name>
   <packaging>bundle</packaging>
 
