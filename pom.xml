@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>oracle</artifactId>
-  <version>19.12.0.0000L</version>
+  <version>21.3.0.0011L</version>
   <name>oracle</name>
   <packaging>bundle</packaging>
 
@@ -93,8 +93,8 @@
                <artifactItems>
                  <artifactItem>
                    <groupId>com.oracle.database.jdbc</groupId>
-                    <artifactId>ojdbc10</artifactId>
-                    <version>19.12.0.0</version>
+                    <artifactId>ojdbc11</artifactId>
+                    <version>21.3.0.0</version>
                    <type>jar</type>
                    <overWrite>false</overWrite>
                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -120,8 +120,8 @@
             <Export-Package>*,META-INF.services.*</Export-Package>
             <!-- <Require-Bundle></Require-Bundle> -->
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!com.oracle.common.base,!com.oracle.common.internal,!com.oracle.common.internal.net.ipclw.mql,!com.oracle.common.io,!com.oracle.common.net,!com.oracle.net,!com.sun.security.jgss,!javax.json,!javax.json.stream,!javax.security.cert,!oracle.as.jmx.framework,!oracle.i18n.text,!javax.resource.spi,!javax.resource.spi.endpoint,!javax.resource.spi.security,!oracle.security.pki,!oracle.ons,!oracle.i18n.text.converter,!oracle.xml.parser.v2,!sun.security.krb5.internal,!oracle.xdb,!com.sun.security.auth.module,!sun.security.util,!sun.security.krb5,!oracle.security.jps.service.keystore,!oracle.simplefan,!oracle.xml.util,*</Import-Package>
-            <DynamicImport-Package>com.oracle.common.base,com.oracle.common.internal,com.oracle.common.internal.net.ipclw.mql,com.oracle.common.io,com.oracle.common.net,com.oracle.net,com.sun.security.jgss,javax.json,javax.json.stream,javax.security.cert,oracle.as.jmx.framework,oracle.i18n.text,javax.resource.spi,javax.resource.spi.endpoint,javax.resource.spi.security,oracle.security.pki,oracle.ons,oracle.i18n.text.converter,oracle.xml.parser.v2,sun.security.krb5.internal,oracle.xdb,com.sun.security.auth.module,sun.security.util,sun.security.krb5,oracle.security.jps.service.keystore,oracle.simplefan,oracle.xml.util</DynamicImport-Package>
+            <Import-Package>!com.oracle.common.base,!com.oracle.common.internal,!com.oracle.common.internal.net.ipclw.mql,!com.oracle.common.io,!com.oracle.common.net,!com.oracle.net,!com.sun.security.jgss,!javax.json,!javax.json.stream,!javax.security.cert,!oracle.as.jmx.framework,!oracle.i18n.text,!javax.resource.spi,!javax.resource.spi.endpoint,!javax.resource.spi.security,!oracle.security.pki,!oracle.ons,!oracle.i18n.text.converter,!oracle.xml.parser.v2,!sun.security.krb5.internal,!oracle.xdb,!com.sun.security.auth.module,!sun.security.util,!sun.security.krb5,!oracle.security.jps.service.keystore,!oracle.simplefan,!oracle.xml.util,!com.oracle.svm.core.annotate,!com.oracle.svm.core.configure,!jdk.net,!oracle.core.ojdl,!oracle.dms.console,!oracle.dms.context,!oracle.dms.instrument,!oracle.ucp.jdbc,!oracle.ucp.proxy,!org.graalvm.nativeimage,!org.graalvm.nativeimage.hosted,*</Import-Package>
+            <DynamicImport-Package>com.oracle.common.base,com.oracle.common.internal,com.oracle.common.internal.net.ipclw.mql,com.oracle.common.io,com.oracle.common.net,com.oracle.net,com.sun.security.jgss,javax.json,javax.json.stream,javax.security.cert,oracle.as.jmx.framework,oracle.i18n.text,javax.resource.spi,javax.resource.spi.endpoint,javax.resource.spi.security,oracle.security.pki,oracle.ons,oracle.i18n.text.converter,oracle.xml.parser.v2,sun.security.krb5.internal,oracle.xdb,com.sun.security.auth.module,sun.security.util,sun.security.krb5,oracle.security.jps.service.keystore,oracle.simplefan,oracle.xml.util,com.oracle.svm.core.annotate,com.oracle.svm.core.configure,jdk.net,oracle.core.ojdl,oracle.dms.console,oracle.dms.context,oracle.dms.instrument,oracle.ucp.jdbc,oracle.ucp.proxy,org.graalvm.nativeimage,org.graalvm.nativeimage.hosted</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
