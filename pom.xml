@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>oracle</artifactId>
-  <version>19.12.0.0</version>
-  <name>oracle19</name>
+  <version>19.12.0.0000L</version>
+  <name>oracle</name>
   <packaging>bundle</packaging>
 
-  <description>OSGi Version of oracle19</description>
+  <description>OSGi Version of oracle</description>
   <url>http://maven.lucee.org/oracle/</url>
 
   <!-- same license as the original jar -->
@@ -110,7 +110,7 @@
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>3.0.1</version>
+        <version>5.1.2</version>
         <configuration>
           <unpackBundle>true</unpackBundle>
           <instructions>
@@ -120,8 +120,8 @@
             <Export-Package>*,META-INF.services.*</Export-Package>
             <!-- <Require-Bundle></Require-Bundle> -->
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <!-- <Import-Package>*</Import-Package> -->
-            <!-- <DynamicImport-Package>*</DynamicImport-Package> -->
+            <Import-Package>!com.oracle.common.base,!com.oracle.common.internal,!com.oracle.common.internal.net.ipclw.mql,!com.oracle.common.io,!com.oracle.common.net,!com.oracle.net,!com.sun.security.jgss,!javax.json,!javax.json.stream,!javax.security.cert,!oracle.as.jmx.framework,!oracle.i18n.text,!javax.resource.spi,!javax.resource.spi.endpoint,!javax.resource.spi.security,!oracle.security.pki,!oracle.ons,!oracle.i18n.text.converter,!oracle.xml.parser.v2,!sun.security.krb5.internal,!oracle.xdb,!com.sun.security.auth.module,!sun.security.util,!sun.security.krb5,!oracle.security.jps.service.keystore,!oracle.simplefan,!oracle.xml.util,*</Import-Package>
+            <DynamicImport-Package>com.oracle.common.base,com.oracle.common.internal,com.oracle.common.internal.net.ipclw.mql,com.oracle.common.io,com.oracle.common.net,com.oracle.net,com.sun.security.jgss,javax.json,javax.json.stream,javax.security.cert,oracle.as.jmx.framework,oracle.i18n.text,javax.resource.spi,javax.resource.spi.endpoint,javax.resource.spi.security,oracle.security.pki,oracle.ons,oracle.i18n.text.converter,oracle.xml.parser.v2,sun.security.krb5.internal,oracle.xdb,com.sun.security.auth.module,sun.security.util,sun.security.krb5,oracle.security.jps.service.keystore,oracle.simplefan,oracle.xml.util</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
@@ -138,7 +138,7 @@
     <url>https://github.com/lucee/osgi-bundle-oracle</url>
     <connection>scm:git:git://github.com/lucee/osgi-bundle-oracle.git</connection>
     <developerConnection>scm:git:git@github.com:lucee/osgi-bundle-oracle.git</developerConnection>
-    <tag>oracle19 OSGi library</tag>
+    <tag>oracle OSGi library</tag>
   </scm>
 
   <distributionManagement>
